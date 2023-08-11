@@ -1,11 +1,11 @@
 #include <esp_now.h>
 #include <WiFi.h>
 
-// REPLACE WITH YOUR RECEIVER MAC Address
+// Endereço MAC do esp32 que ira receber os dados
 uint8_t broadcastAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 
 // Struct para enviar dados
-// Precisa ser igual ao que recebe
+// Precisa ser igual ao que recebe os dados
 typedef struct struct_message {
   char a[32];
   int b;
